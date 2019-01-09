@@ -1,0 +1,11 @@
+<h2>Registered Users</h2>
+<ul class="registeredUsers">
+    <li *ngFor="let reguser of registeredUsers">
+        <!-- <a routerLink="/detail/{{reguser.userId}}">
+            <span class="badge">{{reguser.userId}}</span> {{reguser.username}}
+        </a> -->
+        <a routerLink="/detail/{{reguser.userId}}">
+            <span class="badge">{{reguser.cuid}}</span> {{reguser.username}}
+        </a>
+    </li>
+</ul>

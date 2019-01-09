@@ -1,0 +1,12 @@
+<div *ngIf="reguser">
+  <h2>{{reguser.username | uppercase}} Details</h2>
+  <div><span>id: </span>{{reguser.userId}}</div>
+
+  <div>
+      <label>name: 
+          <input [(ngModel)]="reguser.username" placeholder="name">
+      </label>
+  </div>
+</div>
+
+<button (click)="goBack()">go back</button>
